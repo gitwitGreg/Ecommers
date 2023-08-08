@@ -1,0 +1,759 @@
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.nav {
+    padding: 0;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 80px;
+    background: white; 
+    box-shadow: 0 5px 15px  rgba(0, 0, 0, 0.6);
+    height:80px;
+    z-index: 999;
+    position: sticky;
+    top:0;
+    left:0;
+}
+
+#navbar{
+    display: flex;
+}
+
+#navbar li {
+    list-style: none;
+    padding: 0 20px;
+    display: flex;
+}
+
+#navbar li a {
+    font-size: 16px; 
+    font-weight: 600;
+    color: black;
+    text-decoration: none;
+    transition: 0.3s ease;
+    position: relative;
+}
+
+#navbar li a:hover,
+#navbar li a.active {
+    color: lightskyblue;
+
+}
+
+#navbar li a.active:after,
+#navbar li a:hover::after{
+    content: '';
+    width: 60%;
+    height: 2px;
+    background: lightskyblue;
+    bottom: -4px;
+    left: 0px;
+    position: absolute;
+}
+
+.hero{
+    background-image: url('../src/assets/p.jpg');
+    background-position: top 25 right 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height:90vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start; 
+    font-size: xx-large;
+}
+
+
+
+
+.hero h1{
+    bottom: 15px;
+    color: lightblue;
+    padding-left: 850px;
+}
+
+.hero button{
+    width: 150px;
+    margin-left: 850px;
+    height: 50px;
+    margin-top: 20px;
+    border-radius: 10px;
+    transition: .3s;
+    cursor: pointer;
+    font-size: 19px;
+    font-weight: 600;
+    background-color: white;
+    border: none;
+    outline: none;
+}
+
+.hero button:hover{
+    background: lightblue;
+    color: white;
+}
+
+.hero h4{
+    margin-left: 850px;
+    padding-top: 40px;
+    margin-top: 150px;
+}
+.hero p {
+    margin-left: 850px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.options {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: space-between;
+    padding: 40px 20px;
+}
+
+.shipping{
+    border: 1px solid lightgrey;
+    padding: 20px;
+    justify-content: space-between;
+}
+
+.shipping h6 {
+    font-size: medium;
+    border: 2px solid pink;
+    background: pink;
+    align-items: center;
+    margin-top: 10px;
+    padding: 0px 20px;
+    align-content: center;
+    border-radius: 2px;
+    color:darkslategrey;
+    cursor: pointer;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.simg {
+    width: 130px;
+    height: 130px;
+}
+
+.orderimg {
+    width: 130px;
+    height: 130px; 
+}
+
+.order {
+    border: 1px solid lightgrey;
+    padding: 20px;
+    justify-content: space-between;
+}
+
+.order h6 {
+    font-size: medium;
+    border: 2px solid rgb(112, 214, 225);
+    background: rgb(112, 214, 225);
+    align-items: center;
+    margin-top: 10px;
+    padding: 0px 20px;
+    align-content: center;
+    border-radius: 2px;
+    color:darkslategrey;
+    cursor: pointer;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.saveimg{
+    width: 130px;
+    height: 130px; 
+}
+
+.saveMoney {
+        border: 1px solid lightgrey;
+        padding: 20px;
+        justify-content: space-between;
+}
+
+.saveMoney h6 {
+    font-size: medium;
+    border: 2px solid #E53D00;
+    background: #E53D00;
+    align-items: center;
+    margin-top: 10px;
+    padding: 0px 20px;
+    align-content: center;
+    border-radius: 2px;
+    color:darkslategrey;
+    cursor: pointer;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+    
+.promimg {
+    width: 130px;
+    height: 130px; 
+}
+
+.promotions {
+    border: 1px solid lightgrey;
+    padding: 20px;
+    justify-content: space-between;
+}
+
+.promotions h6 {
+    font-size: medium;
+    border: 2px solid #FFE900;
+    background: #FFE900;
+    align-items: center;
+    margin-top: 10px;
+    padding: 0px 20px;
+    align-content: center;
+    border-radius: 2px;
+    color:darkslategrey;
+    cursor: pointer;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.happysell{
+    border: 1px solid lightgrey;
+    padding: 20px;
+    justify-content: space-between;
+}
+
+.happyimg{
+    width: 130px;
+    height: 130px; 
+}
+
+.happysell h6 {
+    font-size: medium;
+    border: 2px solid #A79AB2;
+    background: #A79AB2;
+    align-items: center;
+    margin-top: 10px;
+    padding: 0px 20px;
+    align-content: center;
+    border-radius: 2px;
+    color:darkslategrey;
+    cursor: pointer;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.support {
+    border: 1px solid lightgrey;
+    padding: 20px;
+    justify-content: space-between;
+}
+
+.suppimg{
+    width: 130px;
+    height: 130px;   
+}
+
+.support h6{
+    font-size: medium;
+    border: 2px solid #AA78A6;
+    background: #AA78A6;
+    align-items: center;
+    margin-top: 10px;
+    padding: 0px 20px;
+    align-content: center;
+    border-radius: 2px;
+    color:darkslategrey;
+    cursor: pointer;  
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.footer{
+    text-align: center;
+    padding: 20px 20px;
+}
+
+.footer .product-container{
+    width: 90%;
+    min-width: 250px;
+    cursor: pointer;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 20px;
+    padding-right: 20px;
+}
+
+
+.footer img {
+    width: 100%;
+    height: 80%;
+    min-width: 250px;
+    border-radius: 20px;
+}
+
+.footer h1{
+    font-size:xx-large;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.footer h3{
+    font-size: large;
+    margin-top: 10px;
+    color: grey;
+}
+.footer .product-container .p1{
+    width: 23%;
+    min-width: 250px;
+    padding: 10px 12px;
+    border: 1px solid lightgray;
+    border-radius: 25px;
+    cursor: pointer;
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.02);
+    text-align: left;
+    position: relative;
+}
+
+.footer .product-container .p1 .description span{
+    font-size: small;
+    font-weight: 900;
+    color: grey;
+}
+
+.footer .product-container .p1 .description .star{
+    color: gold;
+
+}
+.footer .product-container .p1 .description h3{
+    color: black;
+
+}
+
+.footer .product-container .p1 #sp{
+    color: lightblue;
+    width: 40px;
+    height: 40px;
+    margin-left: 120px;
+    font-size: large;
+    position: absolute;
+    bottom: 20px;
+    right: 10px;
+}
+
+.promo{
+    margin-top: 15px;
+}
+
+.promo .banner{
+    background: url(../src/assets/cw.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 200px;
+    padding-top: 60px;
+    color: white;
+    align-items: center;
+    justify-content: space-between;
+    justify-self: center;
+}
+
+.promo .banner h1 {
+    padding: 10px;
+    color: black;
+}
+
+.promo .banner h2{
+    font-size:x-large;
+}
+
+.promo .banner span{
+    color: red;
+}
+
+.promo .banner button{
+    height: 50px;
+    width: 180px;
+    border-radius: 6px;
+    box-shadow: none;
+    margin: 30px;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 15px 30px;
+    background-color: white;
+    border: none;
+    outline: none;
+    transition: 0.2s;
+}
+
+.promo .banner button:hover{
+    background-color: lightblue;
+    color: white;
+    cursor: pointer;
+}
+
+.ads{
+    display: grid;
+    width: 80%;
+    padding: 100px;
+    flex-wrap: wrap;
+    grid-template-columns: repeat(3,1fr);
+    column-gap: 40px;
+    row-gap: 15px;
+}
+
+.ads .ad1{
+    background: url(../src/assets/a1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 20vh;
+    width: 100%;
+    color: white;
+    text-align: start;
+    padding: 40px 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    transition: 0.3 ease;
+    
+}
+
+.ads .ad1:hover button{
+    background: transparent;
+    border: 2px solid white;
+}
+
+.ad1 h3{
+    padding-bottom: 5px ;
+}
+.ad1 h1{
+    padding-bottom: 5px ;
+    font-weight: 600;
+}
+
+.ad1 p{
+    padding-bottom: 5px ;
+}
+.ad1 button{
+    height: 40px;
+    width: 100px;
+    margin-top: 10px;
+    background: green;
+    border: none;
+    border-radius: 3px;
+    color:white;
+    cursor:pointer;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+
+
+.ads .ad2{
+    background: url(../src/assets/a2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 20vh;
+    width: 100%;
+    color: white;
+    text-align: start;
+    padding: 40px 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.ads .ad2:hover button{
+    background: green;
+    color: white;
+    border:none
+}
+
+.ad2 h3{
+    padding-bottom: 5px ;
+}
+.ad2 h1{
+    padding-bottom: 5px ;
+    font-weight: 600;
+}
+
+.ad2 p{
+    padding-bottom: 5px ;
+}
+.ad2 button{
+    height: 40px;
+    width: 100px;
+    margin-top: 10px;
+    border: 2px solid white;
+    color: white;
+    background: transparent;
+    border-radius: 3px;
+    cursor: pointer;
+
+}
+
+.ads .ad3{
+    background: url(../src/assets/a3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 20vh;
+    width: 100%;
+    color: white;
+    text-align: start;
+    padding: 40px 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.ad3 h3{
+    padding-bottom: 5px ;
+}
+.ad3 h1{
+    padding-bottom: 5px ;
+    font-weight: 600;
+}
+
+.ads .ad4{
+    background: url(../src/assets/a4.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 20vh;
+    width: 100%;
+    color: white;
+    text-align: start;
+    padding: 40px 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.ad3 h3{
+    padding-bottom: 5px ;
+}
+.ad3 h1{
+    padding-bottom: 5px ;
+    font-weight: 600;
+}
+
+.ads .ad5{
+    background: url(../src/assets/a5.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 20vh;
+    width: 100%;
+    color: white;
+    text-align: start;
+    padding: 40px 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.ad3 h1{
+    padding-bottom: 5px ;
+}
+.ad3 h3{
+    padding-bottom: 5px ;
+    font-weight: 600;
+    color: red;
+}
+
+.ads .ad6{
+    background: url(../src/assets/a11.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 20vh;
+    width: 100%;
+    color: white;
+    text-align: start;
+    padding: 40px 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.ad3 h1{
+    padding-bottom: 5px ;
+}
+.ad3 h3{
+    padding-bottom: 5px ;
+    font-weight: 600;
+    color: red;
+}
+
+.signup{
+    background: url(../src/assets/db.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 30vh;
+    color: white;
+    justify-content: space-between;
+    transition: 0.3s ease;
+}
+
+.signup h1{
+    padding-left: 60px;
+    padding-top: 90px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+}
+.signup p{
+    padding-left: 60px;
+    padding-top: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+.signup input{
+    margin-left: 600px;
+    height: 40px;
+    width: 500px;
+    border-radius: 5px;
+    box-shadow: none;
+    border: none;
+}
+.signup span{
+    color: red;
+}
+
+.signup p{
+    color: lightgrey;
+}
+
+
+.signup button{
+    height: 41px;
+    width: 122px;
+    margin-left: -3px;
+    border: none;
+    border-radius: 5px;
+    background: grey;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.signup button:hover{
+    background: transparent;
+    border: 2px solid white;
+    cursor: pointer;
+}
+
+.moreinfo{
+    display: flex;
+    padding-left: 50px;
+ }
+
+.infocontainer {
+    justify-content: space-between;
+    align-items: start;
+    padding: 50px;
+}
+
+.infocontainer h4{
+    font-size: x-large;
+    margin-bottom: 10px;
+}
+
+.infocontainer strong {
+    font-size: larger;
+    color: lightslategrey;
+}
+.infocontainer p {
+    font-size: large;
+    color: lightslategrey;
+}
+
+.icons{
+    font-size: larger;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.icons h5{
+    padding-bottom: 15px;
+    color: black;
+
+    font-size: larger;
+}
+
+.icons i {
+    margin-left: 5px;
+    color: lightslategray;
+}
+
+.about {
+  margin-top: 90px;
+  margin-bottom: 20px;
+  margin-left: 30px;
+  justify-content: space-between;
+}
+
+.about h5{
+    font-size: larger;
+    margin-bottom: 10px;
+
+}
+.about a{
+    text-decoration: none;
+    color: lightslategray;
+    font-size: large;
+    font-weight: 400;
+}
+
+.account {
+    margin-top: 90px;
+    margin-bottom: 20px;
+    justify-content: space-between;
+    margin-left: 50px;
+}
+  
+.account h5{
+      font-size: larger;
+      margin-bottom: 10px;
+  
+}
+.account a{
+      text-decoration: none;
+      color: lightslategray;
+      font-size: large;
+      font-weight: 400;
+}
+
+.install{
+    margin-top: 90px;
+    margin-left: 50px;
+    justify-content: space-between;
+    align-content: start;
+}
+
+.install h5{
+    font-size: larger;
+    margin-bottom: 20px;
+}
+
+.install p{
+    color: lightslategray;
+}
+
+.install .downloadbuttons {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 5px;
+    transition: 0.3s ease;
+}
+
+.install button{
+    height: 50px;
+    width: 200px;
+    background: transparent;
+    border: 1px solid lightslategray;
+    border-radius: 3px;
+    justify-content: center;
+    align-items: center;
+}
+.install button:hover{
+    cursor: pointer;
+    background: lightslategray;
+    color: white;
+    border: none;
+}
+
+.install .cards{
+    font-size: x-large;
+    display: flex;
+    justify-content: space-between;
+    width: 150px;
+}
+
+.pagebottom{
+    color: lightslategray;
+    margin-left: 600px;
+    font-size: larger;
+    padding-bottom: 10px;
+}
+
